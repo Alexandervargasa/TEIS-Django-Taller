@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Compra Rapida</h1>
+    <p>Libro: {{ libro.titulo }}</p>
+    <p>Precio Final (IVA): ${{ total|floatformat:2 }}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Comprar Ya</button>
+    </form>
+</body>
+</html>
