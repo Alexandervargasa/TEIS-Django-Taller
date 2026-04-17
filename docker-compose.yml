@@ -25,6 +25,7 @@ services:
       - DB_PASSWORD=secret_password
       - DB_HOST=db
       - DB_PORT=5432
+      - DJANGO_ALLOWED_HOSTS=<IP-EC2> localhost 127.0.0.1
 
   # CAMBIO 3: Servicio Nginx nuevo
   nginx:
